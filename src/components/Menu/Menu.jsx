@@ -4,7 +4,7 @@ import YoutubeLogo from "../../assets/logo_1.png";
 import MenuIcons from "../MenuIcons/MenuIcons";
 import { Container, Wrapper, Logo, Img } from "./styled/Menu.styledcomponent";
 
-function Menu() {
+function Menu({ darkMode, setDarkMode }) {
   return (
     <Container>
       <Wrapper>
@@ -12,7 +12,7 @@ function Menu() {
           <Img src={YoutubeLogo} alt="youtube logo" />
           Youtube
         </Logo>
-        <MenuIcons />
+        <MenuIcons darkMode={darkMode} setDarkMode={setDarkMode} />
       </Wrapper>
     </Container>
   );

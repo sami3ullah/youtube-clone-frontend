@@ -12,3 +12,10 @@ export const Hr = styled.hr`
   margin: 15px 0px;
   border: 0.5px solid ${({ theme }) => theme.soft};
 `;
+
+export const Title = styled.h2`
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaa;
+  margin-bottom: 20px;
+`;

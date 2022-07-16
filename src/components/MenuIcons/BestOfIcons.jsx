@@ -10,70 +10,55 @@ import LiveTvOutlinedIcon from "@mui/icons-material/LiveTvOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import WbTwilightOutlinedIcon from "@mui/icons-material/WbTwilightOutlined";
+import Brightness5OutlinedIcon from "@mui/icons-material/Brightness5Outlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 
-const BestIcons = [
-  {
-    name: "Music",
-    icon: <LibraryMusicOutlinedIcon />,
-    id: "1",
-  },
-  {
-    name: "Sports",
-    icon: <SportsBasketballOutlinedIcon />,
-    id: "2",
-  },
-  {
-    name: "Gaming",
-    icon: <SportsEsportsOutlinedIcon />,
-    id: "3",
-  },
-  {
-    name: "Movies",
-    icon: <MovieCreationOutlinedIcon />,
-    id: "4",
-  },
-  {
-    name: "News",
-    icon: <ArticleOutlinedIcon />,
-    id: "5",
-  },
-  {
-    name: "Live",
-    icon: <LiveTvOutlinedIcon />,
-    id: "6",
-  },
-  {
-    name: "hr",
-    icon: <Hr />,
-    id: "30",
-  },
-  {
-    name: "Settings",
-    icon: <SettingsOutlinedIcon />,
-    id: "7",
-  },
-  {
-    name: "Report",
-    icon: <FlagOutlinedIcon />,
-    id: "8",
-  },
-  {
-    name: "Help",
-    icon: <HelpOutlineOutlinedIcon />,
-    id: "9",
-  },
-  {
-    name: "Light Mode",
-    icon: <WbTwilightOutlinedIcon />,
-    id: "10",
-  },
-];
-
-const items = returnIcon(BestIcons);
-
-function BesOfIcons() {
-  return <>{items}</>;
+function BesOfIcons({ darkMode, setDarkMode }) {
+  return (
+    <>
+      <Item>
+        <LibraryMusicOutlinedIcon />
+        Music
+      </Item>
+      <Item>
+        <SportsBasketballOutlinedIcon />
+        Sports
+      </Item>
+      <Item>
+        <SportsEsportsOutlinedIcon />
+        Gaming
+      </Item>
+      <Item>
+        <MovieCreationOutlinedIcon />
+        Movies
+      </Item>
+      <Item>
+        <ArticleOutlinedIcon />
+        News
+      </Item>
+      <Item>
+        <LiveTvOutlinedIcon />
+        Live
+      </Item>
+      <Hr />
+      <Item>
+        <SettingsOutlinedIcon />
+        Settings
+      </Item>
+      <Item>
+        <FlagOutlinedIcon />
+        Report
+      </Item>
+      <Item>
+        <HelpOutlineOutlinedIcon />
+        Help
+      </Item>
+      <Item onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? <Brightness5OutlinedIcon /> : <DarkModeOutlinedIcon />}
+        {darkMode ? "Light Mode" : "Dark Mode"}
+      </Item>
+    </>
+  );
 }
 
 export default BesOfIcons;
