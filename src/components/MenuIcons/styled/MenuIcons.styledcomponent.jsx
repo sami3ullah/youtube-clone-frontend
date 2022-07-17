@@ -6,6 +6,10 @@ export const Item = styled.div`
   gap: 20px;
   cursor: pointer;
   padding: 10px 0px;
+
+  &:hover {
+    background: ${({ theme }) => theme.soft};
+  }
 `;
 
 export const Hr = styled.hr`
