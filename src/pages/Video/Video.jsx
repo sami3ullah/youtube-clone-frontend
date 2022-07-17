@@ -11,6 +11,7 @@ import {
   Button,
   Hr,
 } from "./styled/Video.styledcomponent";
+import Card from "../../components/Card/Card";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import ThumbDownOutlinedIcon from "@mui/icons-material/ThumbDownOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
@@ -56,7 +57,18 @@ function Video() {
         <Hr />
         <Comments />
       </Content>
-      <Recommendation>Recommendation</Recommendation>
+      <Recommendation>
+        <Card type="horizontal" />
+        <Card type="horizontal" />
+        <Card type="horizontal" />
+        <Card type="horizontal" />
+        <Card type="horizontal" />
+        <Card type="horizontal" />
+        <Card type="horizontal" />
+        <Card type="horizontal" />
+        <Card type="horizontal" />
+        <Card type="horizontal" />
+      </Recommendation>
     </Container>
   );
 }
