@@ -12,3 +12,9 @@ export const Button = styled.button`
   align-items: center;
   gap: 5px;
 `;
+
+export const Avatar = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+`;
