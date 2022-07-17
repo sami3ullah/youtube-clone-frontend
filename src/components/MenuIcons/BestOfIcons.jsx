@@ -1,5 +1,4 @@
 import { Item, Hr } from "./styled/MenuIcons.styledcomponent";
-import { returnIcon } from "../../utils/returnIcon";
 
 import LibraryMusicOutlinedIcon from "@mui/icons-material/LibraryMusicOutlined";
 import SportsBasketballOutlinedIcon from "@mui/icons-material/SportsBasketballOutlined";
