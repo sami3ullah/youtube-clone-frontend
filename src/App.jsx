@@ -7,6 +7,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Video from "./pages/Video/Video";
+import Authentication from "./pages/Authentication/Authentication.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -21,6 +22,7 @@ function App() {
               <Routes>
                 <Route path="/">
                   <Route index element={<Home />} />
+                  <Route path="authentication" element={<Authentication />} />
                   <Route path="video">
                     <Route path=":id" element={<Video />} />
                   </Route>
